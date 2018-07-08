@@ -3,10 +3,10 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 name = "pypi"
 
+[dev-packages]
+
 [packages]
 tweepy = "==3.6.0"
 
-[dev-packages]
-
 [requires]
-python_version = "3.7"
+python_version = "3.6"

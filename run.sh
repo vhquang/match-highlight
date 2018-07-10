@@ -1,3 +1,3 @@
 #!/bin/bash
 
-python twitter_streaming.py| tee data/data-0709:1748.json
+python twitter_streaming.py| tee data/frabel-data-$(date +"%m%d:%H%M").json

@@ -32,7 +32,7 @@ if __name__ == '__main__':
 
     stream.filter(track=[
         # 'fifa',
-        'worldcup',
-        'FRABEL',
+        # 'worldcup',
+        'ENGCRO',
     ])
 

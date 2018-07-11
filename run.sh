@@ -1,3 +1,3 @@
 #!/bin/bash
 
-python twitter_streaming.py| tee data/frabel-data-$(date +"%m%d:%H%M").json
+python twitter_streaming.py| tee data/engcro-data-$(date +"%m%d:%H%M").json

@@ -21,7 +21,7 @@ class StdOutListener(StreamListener):
         return True
 
     def on_error(self, status):
-        print(status)
+        print('ERROR', status)
 
 
 if __name__ == '__main__':
@@ -30,9 +30,12 @@ if __name__ == '__main__':
     auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
     stream = Stream(auth, l)
 
-    stream.filter(track=[
-        # 'fifa',
-        # 'worldcup',
-        'ENGCRO',
-    ])
+    try:
+        stream.filter(track=[
+            # 'fifa',
+            # 'worldcup',
+            'ENGCRO',
+        ])
+    except KeyboardInterrupt:
+        pass
 
